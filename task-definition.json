@@ -3,7 +3,7 @@
   "inferenceAccelerators": [],
   "containerDefinitions": [
     {
-      "name": "happenings-backend",
+      "name": "nginxContainer",
       "image": "github-actions-continuous-delivery",
       "resourceRequirements": null,
       "essential": true,
