@@ -1,6 +1,5 @@
 {
-  "requiresCompatibilities": ["FARGATE"],
-  "inferenceAccelerators": [],
+  "executionRoleArn": "ecsTaskExecutionRole",
   "containerDefinitions": [
     {
       "name": "nginxContainer",
@@ -15,11 +14,19 @@
       ]
     }
   ],
-  "volumes": [],
-  "networkMode": "awsvpc",
-  "memory": "1024",
-  "cpu": "256",
-  "executionRoleArn": "ecsTaskExecutionRole",
-  "family": "happenings-task-definition",
-  "placementConstraints": []
+  "memory": "300",
+  "taskRoleArn": "ecsTaskExecutionRole",
+  "compatibilities": [
+    "EC2"
+  ],
+  "taskDefinitionArn": "task-definition/nginxWebServer:2",
+  "family": "nginxWebServer",
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "networkMode": "bridge",
+  "cpu": "1024",
+  "revision": 2,
+  "status": "ACTIVE",
+  "volumes": []
 }
