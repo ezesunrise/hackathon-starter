@@ -19,7 +19,7 @@
   "compatibilities": [
     "EC2"
   ],
-  "taskDefinitionArn": "task-definition/nginxWebServer:2",
+  "taskDefinitionArn": "task-definition/nginxWebServer",
   "family": "nginxWebServer",
   "requiresCompatibilities": [
     "EC2"
